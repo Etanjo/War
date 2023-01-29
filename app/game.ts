@@ -148,7 +148,7 @@ function addToPlayer(Card){
   playerCards.push(Card)
 }
 function addToCpu(Card){
-  playerCards.push(Card)
+  cpuCards.push(Card)
 }
 
 function doNextStep(){
