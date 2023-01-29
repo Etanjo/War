@@ -18,6 +18,23 @@ h1{
   align-items: center;
   
 }
+#instructions{
+    font-family: 'Satisfy';
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 9px;
+  font-size: 30px;
+  margin: 10px;
+  text-decoration: none;
+}
+#instructions:hover{
+  transition: all 300ms;
+  background-color: grey;
+  cursor: pointer;
+}
+  
+
 
 a{
   font-family: 'Satisfy';
@@ -119,4 +136,19 @@ a:hover{
 .card .number{
     font-size: 90px;
   font-style: normal;
+}
+.active::after{
+  display: block;
+  content: 'When playing, click your deck (bottom left) to do the next step of the game. The card with the higher value wins, and both are given to the winner. (A = 1, J = 11, Q = 12, K = 13). When cards of the same value are played, a War begins. Each player gives three cards, and then their final card. Whoever wins gets all 10 cards played since the round began. When the other player reaches 0, you win. Have fun!';
+  font-family: 'Satisfy';
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 9px;
+  font-size: 30px;
+  margin: 10px;
+  text-decoration: none;
+  position: relative;
+ 
+  width: 600px;
 }
