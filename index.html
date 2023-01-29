@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>War Card Game</title>
+  </head>
+  <body>
+    <h1>WAR</h1>
+    <div id="app">
+      <div id = 'menu' class = ''>
+        <a href = '#game' id = 'start'>Play Game!</a>
+        <a href = '' target = '_blank'>Patch Notes</a>
+        <a href = 'https://sunryze-studios.netlify.app/web.html' target = '_blank'>More Games</a>
+      </div>
+      <div id = game class = 'hidden'>
+        <div id = 'cDeck' class = 'deck'>
+          <div id = 'cDeckCards' class = 'deckCards'></div>
+          <span id = 'cDeckAmount'></span>
+        </div>
+        <div id = 'cCard' class = card></div>
+        <div id = 'cBounty'></div>
+        <div id = 'pBounty'></div>
+        <div id = 'pDeck' class = 'deck'>
+          <div id = 'pDeckCards' class = 'deckCards'></div>
+          <span id = 'pDeckAmount'></span>
+        </div>
+        <div id = 'pCard' class = 'card'>
+          
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

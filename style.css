@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+background-color: green;
+display: flex;
+flex-direction: column;
+  align-items: center;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-family: 'Satisfy';
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+a{
+  font-family: 'Satisfy';
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 9px;
+  font-size: 30px;
+  margin: 10px;
+  text-decoration: none;
+}
+a:hover{
+  transition: all 300ms;
+  background-color: grey;
+}
+#menu.hidden{
+  display:none;
+}
+#game.hidden{
+  display:none;
+}
+#game{
+  display: grid;
+  grid-template-areas: ". cCard cDeck"
+                       "cBounty . pBounty "
+                       "pDeck pCard .";
+  justify-items: center;
+}
+#app{
+  width: 100%;
+}
+.card{
+  background-color: white;
+  border: 3px solid black;
+  width: 2.5in;
+  height: 3.5in;
+  border-radius: 5px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  color: red;
+  position: relative;
+  
+  
+}
+#pCard{
+  grid-area:pCard;
+}
+.deckCards{
+  border: 3px solid black;
+  width: 2.5in;
+  height: 3.5in;
+  border-radius: 5px;
+  background-image: url('./assets/cardBack.png');
+  box-shadow: 2px 2px white,  
+              4px 4px black,
+              6px 6px white,
+              8px 8px black;
+  margin-bottom: 5px;
+  
+}
+#cCard{
+  grid-area: cCard;
+}
+#pDeck{
+  grid-area: pDeck;
+  position: relative;
+  left: 0;
+}
+#cDeck{
+  grid-area: cDeck;
+  
+}
+#cBounty{
+  grid-area: cBounty
+}
+#pBounty{
+  grid-area: pBounty
+}
+.deck{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.deck span{
+  color: white;
+  font-family: 'Satisfy';
+}
+.number{
+  font-size: 90px;
+  font-style: normal;
+}
+.card span{
+  font-size: 30px;
+  font-style: italic;
+}
+.card .number{
+    font-size: 90px;
+  font-style: normal;
+}
